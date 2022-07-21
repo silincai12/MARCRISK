@@ -536,3 +536,9 @@ f = CU([test,test2,test3], compnames)
 
 cd C:\Users\dummy account\.spyder-py3
 
+
+mkdir newrepo && cd newrepo
+git remote add origin /path/to/origin.git
+git add .
+git commit -m "my first commit"
+git push -u origin master

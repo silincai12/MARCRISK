@@ -1059,3 +1059,26 @@ git push -u origin 'main'
 !git add .
 !git commit -m "my first commit"
 !git push -u origin master
+!git push origin main
+!git show-ref
+!git init 
+!git status
+!git add -A
+!git commit -f "first commit"
+!git branch 'main'
+!git remote add origin https://github.com/silincai12/MARCRISK.git
+!git push -f origin 'main'
+!git add Risk_tool_python3.py
+!git commit -f "MARC"
+!git commit "MARC"
+!git push -f origin 'main'
+mkdir newrepo && cd newrepo
+git remote add origin https://github.com/silincai12/testestes.git
+git add .
+git commit -m "my first commit"
+git push -u origin master
+!mkdir newrepo && cd newrepo
+!git remote add origin https://github.com/silincai12/testestes.git
+!git add .
+!git commit -m "my first commit"
+!git push -u origin master
