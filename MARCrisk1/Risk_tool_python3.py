@@ -6,7 +6,7 @@ This is a temporary script file.
 """
 ages = [25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
 numComp = [25,50,34,27,34,41,21,16,17,9,9,11,11,9,10,8,11,13,13,4,7,5,9,11,26,10]
-K = 4
+
 
 numOldFlightTests = 2
 numMidFlightTests = 1
@@ -534,13 +534,3 @@ f = CU([test,test2,test3], compnames)
 
 
 
-cd C:\Users\dummy account\.spyder-py3
-
-
-mkdir newrepo && cd newrepo
-git remote add origin https://github.com/silincai12/testestes.git
-git add .
-git commit -m "my first commit"
-git push -u origin master
-
-fewfwefewf
