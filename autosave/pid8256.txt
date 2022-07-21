@@ -1,0 +1,1 @@
+{'C:\\Users\\dummy account\\.spyder-py3\\Risk_tool_python3.py': 'C:\\Users\\dummy account\\.spyder-py3\\autosave\\Risk_tool_python3.py'}
