@@ -4,66 +4,7 @@ Spyder Editor
 
 This is a temporary script file.
 """
-ages = [25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
-numComp = [25,50,34,27,34,41,21,16,17,9,9,11,11,9,10,8,11,13,13,4,7,5,9,11,26,10]
 
-
-numOldFlightTests = 2
-numMidFlightTests = 1
-numYoungFlightTests = 1
-numrepairs = [0,15,30]
-numrepairs2 = [1,2,3]
-Retire = 10
-
- 
-numOldGroundTests = 8
-numMidGroundTests = 6
-numYoungGroundTests = 2
-
-rate = .01
-agestarts = 30
-
-outyears = 40
-
-numsims = 1000
-
-seed = 69
-
-startca= None
-yearsdelay = 2
-threshold = .95
-
-flightEff = .9
-groundEff = .8
-sampEff = 150
-
-numnew = 10
-
-
-ages2 = [27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
-numComp2 = [50,40,23,48,36,29,35,42,22,17,15,7,8,13,10,8,9,10,12,11,12,5,9,4,10,10,24,10]
-rate2 = .012
-agestarts2 = 27
-numrepairs2 = [0,10,20]
-flightEff2 = .7
-groundEff2 = .9
-sampEff = 150
-numnew2 = 8
-Retire2 = 5
-
-
-
-
-ages3 = [29,28,27,26,25,24,23,22,21,20,19,18,17,16,15,14,13,12,11,10,9,8,7,6,5,4,3,2,1,0]
-numComp3 = [30,47,44,41,24,50,36,25,33,42,23,17,18,9,9,12,13,8,11,9,12,13,11,7,9,6,6,15,21,12]
-rate3 = .011
-agestarts3 = 25
-numrepairs3 = [0,5,15]
-flightEff3 = .6
-groundEff3 = .8
-sampEff = 150
-numnew3 = 14
-Retire3 = 10
 
 
 
@@ -196,8 +137,7 @@ def detect(ages,numComp, numOldFlightTests, numMidFlightTests, numYoungFlightTes
        return(bigp)
                    
                    
-test11 = detect(ages,numComp, numOldFlightTests, numMidFlightTests, numYoungFlightTests, numOldGroundTests,numMidGroundTests, numYoungGroundTests, outyears, failureModel, numnew, flightEff, groundEff,numsims, sampEff, seed, agestarts)
-test12 = detect(ages2,numComp2, numOldFlightTests, numMidFlightTests, numYoungFlightTests, numOldGroundTests,numMidGroundTests, numYoungGroundTests, outyears, failureModel, numnew2, flightEff2, groundEff2,numsims, sampEff, seed, agestarts2)
+
     
 #Risk.model 
     
@@ -433,11 +373,6 @@ def riskmodel(ages, numComp, numOldFlightTests, numMidFlightTests, numYoungFligh
 
  
 
-test = riskmodel(ages,numComp, numOldFlightTests, numMidFlightTests, numYoungFlightTests, numOldGroundTests,numMidGroundTests, numYoungGroundTests, failureModel, outyears,  flightEff, groundEff, sampEff, threshold, yearsdelay, numnew, Retire, numrepairs, startca, numsims, seed,agestarts)
-test2 = riskmodel(ages2,numComp2, numOldFlightTests, numMidFlightTests, numYoungFlightTests, numOldGroundTests,numMidGroundTests, numYoungGroundTests, failureModel, outyears,  flightEff2, groundEff2, sampEff, threshold, yearsdelay, numnew2, Retire2, numrepairs2, startca, numsims, seed, agestarts2) 
-test3 = riskmodel(ages3,numComp3, numOldFlightTests, numMidFlightTests, numYoungFlightTests, numOldGroundTests,numMidGroundTests, numYoungGroundTests, failureModel, outyears,  flightEff3, groundEff3, sampEff, threshold, yearsdelay, numnew3, Retire3, numrepairs3, startca, numsims, seed, agestarts3) 
-comps = [test,test2,test3]
-compnames = ["test", "test2", "test3"]
 #Combined Unreliability
 
 def CU(comps, compnames):
@@ -528,9 +463,7 @@ def CU(comps, compnames):
 
 
  
-compnames = ["TSGHA", "SSTVC","TSEM"]
-f = CU([test,test2,test3], compnames)
- 
+
 
 
 
